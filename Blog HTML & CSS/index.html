@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SoftUni Blog</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">SoftUni Blog</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <article>
+                        <header>
+                            <h2>The Subtle Magic Behind Why the Bootstrap 3 Grid Works</h2>
+                        </header>
+
+                        <p>
+                            Things like CSS grids should remain behind the curtain. No one really needs to know how it works, or why. Until you have a broken design or something complex and you can't figure out why your spacing, margins, paddings etc are all messed up. It can be a real pain, especially when you are generating content dynamically in some sort of interface that changes and shifts.
+
+                            I've seen a number of people confused or irritated at how the bootstrap grid works. I've explained it a bunch of times, and it always makes sense afterwards. So I'd like to quickly and visually explain why the Bootstrap grid works, not necessarily how. Let's check out this one weird trick about how Bootstrap does its magic.
+                            Container
+
+                            The container has 2 purposes:
+
+                            To provide the width constraints on responsive widths. When the responsive sizes change, it's the container that changes. Rows and columns are all percentage based so they don't need to change.
+                            To provide padding so the content doesn't touch the edge of the browser. This is 15px on each side as seen in pink in the image. This is explained more later.
+
+                            You never need another container inside of a container. Never. You'll see why.
+                        </p>
+
+                        <small class="author">
+                            Erik Flowers
+                        </small>
+
+                        <footer>
+                            <div class="pull-right">
+                                <a class="btn btn-primary btn-xs" href="viewpost.html">Read more &raquo;</a>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container modal-footer">
+            <p>&copy; Software University 2017</p>
+        </div>
+    </footer>
+</body>
+</html>
